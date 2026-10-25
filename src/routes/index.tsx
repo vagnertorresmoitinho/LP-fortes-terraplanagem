@@ -308,7 +308,12 @@ function Home() {
             />
           </span>
         </a>
-        <p>Qualidade • Compromisso • Eficiência</p>
+        <div className="footer-credit">
+          <p>Qualidade • Compromisso • Eficiência</p>
+          <p>
+            Site desenvolvido por <strong>SCK Soluções</strong>
+          </p>
+        </div>
         <a href="#inicio">Voltar ao topo ↑</a>
       </footer>
       <a

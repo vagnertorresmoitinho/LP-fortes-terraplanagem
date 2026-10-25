@@ -986,3 +986,11 @@ html {
     height: auto;
   }
 }
+
+.footer-credit p {
+  margin: 4px 0;
+}
+.footer-credit strong {
+  color: #f2f2f0;
+  font-weight: 600;
+}
