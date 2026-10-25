@@ -16,6 +16,10 @@ export const Route = createFileRoute("/")({ component: Home });
 const message = "Olá! Gostaria de solicitar um orçamento com a Fortes Terraplanagem.";
 const whatsapp = (phone: string) => `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
 const principal = whatsapp("5565999485776");
+const copyrightYear = new Intl.DateTimeFormat("pt-BR", {
+  year: "numeric",
+  timeZone: "America/Cuiaba",
+}).format(new Date());
 const services = [
   {
     icon: Layers,
@@ -313,6 +317,7 @@ function Home() {
           <p>
             Site desenvolvido por <strong>SCK Soluções</strong>
           </p>
+          <p>© {copyrightYear} SCK Soluções · Todos os direitos reservados.</p>
         </div>
         <a href="#inicio">Voltar ao topo ↑</a>
       </footer>
