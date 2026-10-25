@@ -1,0 +1,988 @@
+.fortes-page {
+  --earth: #26382e;
+  --gold: #e9ae43;
+  --paper: #f7f5ef;
+  color: var(--earth);
+  background: var(--paper);
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.6;
+}
+.fortes-page * {
+  box-sizing: border-box;
+}
+.fortes-page a {
+  text-decoration: none;
+  color: inherit;
+}
+.landing-container {
+  width: min(1200px, 100% - 64px);
+  margin-inline: auto;
+}
+.site-header {
+  border-bottom: 1px solid #26382e22;
+}
+.header-inner {
+  min-height: 106px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+.brand {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  line-height: 1;
+  font-size: 30px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+.brand > svg {
+  width: 39px;
+  height: 39px;
+  color: #976318;
+}
+.brand small {
+  display: block;
+  font-size: 9px;
+  letter-spacing: 3px;
+  margin-top: 8px;
+}
+.header-inner nav {
+  display: flex;
+  gap: 28px;
+  font-size: 12px;
+  font-weight: 600;
+}
+.fortes-page .button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  background: var(--gold);
+  color: #17271f;
+  padding: 18px 24px;
+  font-weight: 700;
+  font-size: 13px;
+  border-radius: 3px;
+  transition: background 0.2s;
+}
+.fortes-page .button:hover {
+  background: #f4c46d;
+}
+.header-button {
+  padding: 13px 18px !important;
+}
+.hero {
+  padding: 64px 0 72px;
+}
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 1fr;
+  gap: 56px;
+  align-items: center;
+}
+.eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  font-weight: 700;
+  margin: 0 0 24px;
+  text-transform: uppercase;
+}
+.eyebrow > span {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #aa7423;
+}
+.fortes-page h1 {
+  font-size: clamp(32px, 3.45vw, 48px);
+  font-weight: 700;
+  letter-spacing: -1.7px;
+  line-height: 1.16;
+  margin: 0 0 26px;
+}
+.fortes-page em {
+  font-style: normal;
+  color: #98661e;
+}
+.hero-description {
+  font-size: 14px;
+  color: #5a655c;
+  max-width: 540px;
+  line-height: 1.85;
+}
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  align-items: center;
+  margin-top: 32px;
+}
+.text-link {
+  font-size: 12px;
+  font-weight: 600;
+  display: inline-flex;
+  gap: 10px;
+  align-items: center;
+}
+.hero-phone {
+  font-size: 11px;
+  color: #626c62;
+  margin-top: 26px;
+}
+.hero-phone a {
+  font-weight: 700;
+  margin-left: 10px;
+}
+.hero-art {
+  position: relative;
+  overflow: hidden;
+  border-radius: 4px;
+}
+.hero-art svg {
+  width: 100%;
+  display: block;
+}
+.art-label {
+  position: absolute;
+  top: 40px;
+  left: 34px;
+  color: #fff;
+}
+.art-label span {
+  font-size: 9px;
+  letter-spacing: 2px;
+  color: #e9ae43;
+}
+.art-label strong {
+  display: block;
+  font-size: 30px;
+  line-height: 1.2;
+  margin-top: 13px;
+  font-weight: 500;
+}
+.audience-strip {
+  background: var(--earth);
+  color: #e5e7dc;
+  padding: 26px 0;
+}
+.audience-strip > div {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  font-size: 11px;
+  align-items: center;
+}
+.audience-strip strong {
+  font-size: 10px;
+  letter-spacing: 1px;
+}
+.audience-strip strong span {
+  color: #e9ae43;
+  margin: 0 12px;
+}
+.section-space {
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
+.section-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 45px;
+  margin-bottom: 40px;
+}
+.fortes-page h2 {
+  font-size: clamp(30px, 3.3vw, 44px);
+  line-height: 1.18;
+  font-weight: 650;
+  letter-spacing: -1.2px;
+  margin: 0;
+}
+.section-heading > p {
+  max-width: 360px;
+  color: #626c62;
+  font-size: 13px;
+}
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-top: 1px solid #26382e28;
+  border-left: 1px solid #26382e28;
+}
+.service-card {
+  padding: 34px;
+  border-right: 1px solid #26382e28;
+  border-bottom: 1px solid #26382e28;
+}
+.service-card > svg {
+  color: #976318;
+  margin-bottom: 30px;
+}
+.fortes-page h3 {
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 700;
+  margin: 0 0 12px;
+}
+.service-card p,
+.difference-list p {
+  font-size: 13px;
+  color: #626c62;
+  margin: 0;
+  line-height: 1.85;
+}
+.differences {
+  background: #eeece3;
+}
+.difference-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 100px;
+}
+.difference-intro {
+  font-size: 13px;
+  color: #626c62;
+  max-width: 350px;
+  margin-top: 24px;
+}
+.difference-list article {
+  display: flex;
+  gap: 20px;
+  padding: 23px 0;
+  border-bottom: 1px solid #26382e25;
+}
+.difference-list article:first-child {
+  padding-top: 0;
+}
+.check-icon {
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  border: 1px solid #26382e35;
+  border-radius: 50%;
+  width: 34px;
+  height: 34px;
+}
+.contact-panel {
+  background: var(--earth);
+  color: #fff;
+  padding: 52px;
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 48px;
+  border-radius: 4px;
+}
+.contact-panel .eyebrow {
+  color: var(--gold);
+}
+.contact-panel h2 {
+  font-size: 35px;
+}
+.contact-panel p:not(.eyebrow) {
+  font-size: 13px;
+  color: #c4cec2;
+  margin-top: 20px;
+}
+.contact-options {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
+}
+.contact-options a {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 20px;
+  border: 1px solid #ffffff35;
+  border-radius: 3px;
+}
+.contact-options a:hover {
+  border-color: var(--gold);
+}
+.contact-options a > svg {
+  color: var(--gold);
+  flex-shrink: 0;
+}
+.contact-options a > svg:last-child {
+  margin-left: auto;
+}
+.contact-options small {
+  display: block;
+  font-size: 9px;
+  letter-spacing: 1px;
+  color: #c4cec2;
+}
+.contact-options strong {
+  display: block;
+  font-size: 20px;
+  white-space: nowrap;
+}
+.site-footer {
+  border-top: 1px solid #26382e22;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  padding-top: 32px;
+  padding-bottom: 90px;
+}
+.site-footer p,
+.site-footer > a:last-child {
+  font-size: 10px;
+  color: #626c62;
+}
+.floating-whatsapp {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  width: 58px;
+  height: 58px;
+  display: grid;
+  place-items: center;
+  background: #146c43;
+  color: #fff !important;
+  border-radius: 50%;
+  box-shadow: 0 6px 24px #0003;
+  z-index: 20;
+}
+.floating-whatsapp:hover {
+  background: #0d5633;
+}
+.fortes-page a:focus-visible {
+  outline: 3px solid #aa7423;
+  outline-offset: 5px;
+}
+.skip-link {
+  position: fixed;
+  left: 16px;
+  top: -80px;
+  background: #fff;
+  padding: 12px;
+  z-index: 30;
+}
+.skip-link:focus {
+  top: 16px;
+}
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 24px;
+}
+@media (min-width: 1600px) {
+  .hero-grid {
+    gap: 72px;
+  }
+}
+@media (max-width: 1000px) {
+  .header-inner nav {
+    gap: 16px;
+  }
+  .hero-grid {
+    gap: 28px;
+  }
+  .hero-actions {
+    gap: 16px;
+  }
+  .service-card {
+    padding: 25px;
+  }
+  .difference-grid {
+    gap: 40px;
+  }
+  .contact-panel {
+    padding: 32px;
+    gap: 24px;
+  }
+  .contact-options strong {
+    font-size: 17px;
+  }
+}
+@media (max-width: 760px) {
+  .landing-container {
+    width: calc(100% - 40px);
+  }
+  .header-inner {
+    min-height: 88px;
+    flex-wrap: wrap;
+    padding: 20px 0;
+    gap: 20px;
+  }
+  .brand {
+    font-size: 24px;
+  }
+  .header-inner nav {
+    order: 3;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .header-button {
+    font-size: 10px !important;
+    padding: 12px !important;
+  }
+  .header-button svg {
+    display: none;
+  }
+  .hero {
+    padding: 40px 0;
+  }
+  .hero-grid,
+  .difference-grid,
+  .contact-panel {
+    grid-template-columns: 1fr;
+  }
+  .hero-grid {
+    gap: 36px;
+  }
+  .fortes-page h1 {
+    font-size: 36px;
+    letter-spacing: -1.3px;
+  }
+  .hero-art {
+    max-height: 460px;
+  }
+  .hero-art svg {
+    margin-top: -20px;
+  }
+  .art-label {
+    top: 26px;
+    left: 26px;
+  }
+  .audience-strip > div {
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+  }
+  .audience-strip strong {
+    font-size: 8px;
+  }
+  .audience-strip strong span {
+    margin: 0 5px;
+  }
+  .section-space {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .section-heading {
+    display: block;
+  }
+  .section-heading > p {
+    margin-top: 22px;
+  }
+  .service-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .service-card {
+    padding: 23px 18px;
+  }
+  .service-card h3 {
+    font-size: 14px;
+  }
+  .difference-list article:first-child {
+    padding-top: 0;
+  }
+  .contact-panel {
+    padding: 28px;
+    gap: 28px;
+  }
+  .contact-panel h2 {
+    font-size: 29px;
+  }
+  .site-footer {
+    flex-wrap: wrap;
+  }
+  .site-footer p {
+    width: 100%;
+    order: 3;
+  }
+  .contact-options a {
+    padding: 16px;
+  }
+  .floating-whatsapp {
+    right: 18px;
+    bottom: 18px;
+  }
+}
+@media (max-width: 380px) {
+  .service-grid {
+    grid-template-columns: 1fr;
+  }
+  .hero-actions {
+    align-items: stretch;
+    flex-direction: column;
+  }
+  .hero-actions .text-link {
+    justify-content: center;
+  }
+  .fortes-page h1 {
+    font-size: 31px;
+  }
+  .header-button {
+    max-width: 130px;
+  }
+  .brand {
+    gap: 7px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .fortes-page * {
+    transition: none !important;
+  }
+}
+/* Identidade industrial Fortes — preto, prata e laranja. */
+.fortes-page {
+  --earth: #111214;
+  --gold: #ff9b18;
+  --paper: #101113;
+  background: var(--paper);
+  color: #f2f2f0;
+}
+.site-header {
+  background: #08090a;
+  border-bottom: 1px solid #ffffff19;
+}
+.header-inner {
+  min-height: 105px;
+}
+.brand {
+  display: block;
+  width: 220px;
+}
+.brand-image {
+  display: block;
+  width: 220px;
+  height: 67px;
+  overflow: hidden;
+}
+.brand-image img {
+  display: block;
+  width: 220px;
+  max-width: none;
+  height: auto;
+  transform: translateY(-1px);
+}
+.header-inner nav {
+  color: #d0d0d0;
+}
+.header-inner nav a:hover,
+.text-link:hover {
+  color: var(--gold);
+}
+.fortes-page .button {
+  background: linear-gradient(120deg, #ffb128, #ed8100);
+  color: #0e0d0b;
+  border-radius: 2px;
+  box-shadow: 0 5px 22px #ff900018;
+}
+.hero {
+  position: relative;
+  padding: 65px 0 72px;
+  background: radial-gradient(ellipse at 72% 30%, #57331935, transparent 58%), #0b0c0e;
+}
+.hero-grid {
+  grid-template-columns: 1.12fr 1fr;
+  gap: 55px;
+}
+.hero-copy {
+  position: relative;
+  z-index: 1;
+}
+.eyebrow {
+  color: #ffad39;
+  letter-spacing: 1.7px;
+}
+.eyebrow > span {
+  background: #ff9b18;
+}
+.fortes-page h1 {
+  font-family: "Oswald", sans-serif;
+  font-size: clamp(38px, 4.15vw, 60px);
+  font-weight: 600;
+  line-height: 1.13;
+  letter-spacing: -0.8px;
+}
+.fortes-page em {
+  color: #ffa321;
+}
+.hero-description {
+  color: #b5b5b8;
+  font-size: 14px;
+}
+.hero-phone {
+  color: #a8a8ad;
+}
+.hero-phone a {
+  color: #f5f5f5;
+}
+.hero-art {
+  height: 620px;
+  border: 1px solid #ffad3935;
+  border-radius: 3px;
+  background-image:
+    linear-gradient(180deg, #0009, transparent 32%, transparent 75%, #000d),
+    url("/images/fortes-foto-3.jpeg");
+  background-size:
+    100% 100%,
+    200% auto;
+  background-position:
+    center,
+    right 47%;
+  box-shadow: 20px 20px 0 #ff9b1809;
+  isolation: isolate;
+}
+.hero-art:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 4px;
+  width: 85px;
+  background: #ff9b18;
+}
+.art-label {
+  top: 30px;
+  left: 28px;
+}
+.art-label span {
+  color: #ffb34c;
+  font-size: 9px;
+}
+.art-label strong {
+  font-family: "Oswald", sans-serif;
+  font-size: 32px;
+  font-weight: 500;
+  text-shadow: 0 2px 10px #000;
+}
+.photo-caption {
+  position: absolute;
+  bottom: 23px;
+  left: 28px;
+  font-size: 9px;
+  letter-spacing: 2px;
+  color: #ffbc60;
+}
+.audience-strip {
+  background: #e98b10;
+  color: #121212;
+}
+.audience-strip strong span {
+  color: #593400;
+}
+.services {
+  background: #101113;
+}
+.section-heading > p,
+.service-card p,
+.difference-list p,
+.difference-intro {
+  color: #ababaf;
+}
+.fortes-page h2 {
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
+  font-size: clamp(36px, 3.8vw, 50px);
+  letter-spacing: -0.5px;
+}
+.service-grid {
+  gap: 16px;
+  border: 0;
+}
+.service-card {
+  border: 1px solid #ffffff13;
+  background: #17181b;
+  position: relative;
+  transition:
+    border-color 0.2s,
+    transform 0.2s;
+}
+.service-card:hover {
+  border-color: #ff9b1870;
+  transform: translateY(-3px);
+}
+.service-card > svg {
+  color: #ff9b18;
+}
+.service-card h3 {
+  color: #e8e8e9;
+  font-size: 15px;
+}
+.differences {
+  background: #191a1d;
+  border-block: 1px solid #ffffff0c;
+}
+.difference-list article {
+  border-color: #ffffff16;
+}
+.check-icon {
+  border-color: #ff9b1855;
+  color: #ffad39;
+  background: #ff9b1808;
+}
+.contact-panel {
+  background: linear-gradient(120deg, #282019, #191a1c);
+  border: 1px solid #ff9b1840;
+  border-top: 3px solid #ff9b18;
+  padding: 52px;
+}
+.contact-panel h2 {
+  font-size: 40px;
+}
+.contact-panel p:not(.eyebrow) {
+  color: #b8b8bb;
+}
+.contact-options a {
+  background: #10111366;
+  border-color: #ffffff25;
+}
+.contact-options small {
+  color: #afafb3;
+}
+.contact-options strong {
+  color: #fff;
+}
+.site-footer {
+  border-color: #ffffff17;
+}
+.site-footer p,
+.site-footer > a:last-child {
+  color: #b4b4b8;
+}
+.skip-link {
+  color: #121212 !important;
+}
+.campaigns {
+  padding-bottom: 0;
+}
+.campaign-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+.campaign-card {
+  display: block;
+  border: 1px solid #ffffff1c;
+  background: #191a1d;
+  overflow: hidden;
+}
+.campaign-card img {
+  width: 100%;
+  height: 460px;
+  object-fit: cover;
+  object-position: center;
+  transition: filter 0.2s;
+}
+.campaign-card:hover img {
+  filter: brightness(1.12);
+}
+.campaign-card > span {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+  font-size: 12px;
+  font-weight: 600;
+}
+.campaign-card > span svg {
+  color: #ff9b18;
+}
+.fortes-page a:focus-visible {
+  outline-color: #ffad39;
+}
+.floating-whatsapp {
+  background: #178449;
+}
+.site-footer .brand-image {
+  height: 68px;
+}
+@media (max-width: 1000px) {
+  .hero-art {
+    height: 570px;
+  }
+  .hero-grid {
+    gap: 30px;
+  }
+  .brand,
+  .brand-image {
+    width: 185px;
+  }
+  .brand-image img {
+    width: 185px;
+  }
+  .brand-image {
+    height: 57px;
+  }
+  .campaign-card img {
+    height: 370px;
+  }
+  .campaign-grid {
+    gap: 16px;
+  }
+}
+@media (max-width: 760px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+  }
+  .hero {
+    padding: 36px 0 45px;
+  }
+  .hero-art {
+    height: 450px;
+    background-size:
+      100% 100%,
+      200% auto;
+    background-position:
+      center,
+      right 47%;
+    box-shadow: 8px 8px 0 #ff9b1810;
+  }
+  .hero-copy {
+    max-width: 560px;
+  }
+  .fortes-page h1 {
+    font-size: 43px;
+    letter-spacing: -0.5px;
+  }
+  .header-inner {
+    min-height: 100px;
+  }
+  .header-inner nav {
+    color: #d6d6da;
+  }
+  .brand,
+  .brand-image {
+    width: 170px;
+  }
+  .brand-image img {
+    width: 170px;
+  }
+  .brand-image {
+    height: 51px;
+  }
+  .header-button {
+    max-width: 145px;
+  }
+  .art-label strong {
+    font-size: 29px;
+  }
+  .audience-strip > div {
+    gap: 10px;
+  }
+  .contact-panel {
+    padding: 28px;
+  }
+  .contact-panel h2 {
+    font-size: 33px;
+  }
+  .campaign-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  .campaign-card {
+    max-width: 460px;
+    width: 100%;
+    margin: auto;
+  }
+  .campaign-card img {
+    height: auto;
+    object-fit: contain;
+  }
+  .campaign-card > span {
+    font-size: 13px;
+  }
+  .campaigns {
+    padding-bottom: 0;
+  }
+  .site-footer .brand-image {
+    height: 52px;
+  }
+}
+@media (max-width: 380px) {
+  .brand,
+  .brand-image {
+    width: 145px;
+  }
+  .brand-image img {
+    width: 145px;
+  }
+  .brand-image {
+    height: 44px;
+  }
+  .header-button {
+    max-width: 120px;
+  }
+  .fortes-page h1 {
+    font-size: 37px;
+  }
+  .hero-art {
+    height: 385px;
+  }
+  .art-label strong {
+    font-size: 26px;
+  }
+}
+.hero-art {
+  background-image:
+    linear-gradient(180deg, #000b, transparent 32%, transparent 75%, #090a0b 94%),
+    url("/images/fortes-foto-3.jpeg");
+}
+.brand-image {
+  height: 58px;
+}
+.site-footer .brand-image {
+  height: 58px;
+}
+@media (max-width: 1000px) {
+  .brand-image {
+    height: 49px;
+  }
+}
+@media (max-width: 760px) {
+  .brand-image,
+  .site-footer .brand-image {
+    height: 45px;
+  }
+  .hero-art {
+    background-image:
+      linear-gradient(180deg, #090a0b 1%, #0009 15%, transparent 40%, transparent 72%, #090a0b 94%),
+      url("/images/fortes-foto-3.jpeg");
+  }
+}
+@media (max-width: 380px) {
+  .brand-image {
+    height: 38px;
+  }
+}
+/* Destaque com a imagem limpa, preservando caminhão e retroescavadeira. */
+.hero-art {
+  height: auto;
+  aspect-ratio: 1668 / 943;
+  background-image: url("/images/fortes-hero-sem-texto.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.hero-art .art-label,
+.hero-art .photo-caption {
+  display: none;
+}
+@media (max-width: 760px) {
+  .hero-art {
+    height: auto;
+    background-image: url("/images/fortes-hero-sem-texto.png");
+    background-size: contain;
+    background-position: center;
+  }
+}
+@media (max-width: 380px) {
+  .hero-art {
+    height: auto;
+  }
+}
