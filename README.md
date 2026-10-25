@@ -29,4 +29,4 @@ O repositório é independente do modelo original. O site hospedado foi importad
 
 Consulte `DIREITOS-E-REVISAO.md`. O crédito SCK Soluções identifica o desenvolvimento do site, sem atribuir à empresa a autoria de bibliotecas, fontes, imagens de terceiros ou da plataforma de hospedagem.
 
-O nome técnico `@lovable.dev/vite-tanstack-config` permanece como dependência de compilação. Ele não é um crédito visual e não pode ser renomeado como se fosse uma biblioteca da SCK. O adaptador opcional de envio de erros ao provedor foi removido do código da aplicação.
+A compilação usa diretamente Vite, TanStack Start, React, Tailwind CSS e Nitro. A configuração de publicação é mantida pela SCK Soluções, sem adaptador de plataforma no código.
